@@ -1,0 +1,47 @@
+
+<html>
+<head>
+<title>Bookmark</title>
+
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body onload="fetchResult()">
+
+
+
+<div class="container mb-4">
+</div>
+<div class="container mb-5" id="bookmark">
+  <div class ="card card-body bg-light">
+<form id="myForm">
+<div class="form-group">
+  <label>Website Name</label>
+ <input type="text" class="form-control" id="SiteName" placeholder="Website Name">
+</div>
+
+<div class="form-group">
+  <label>Website URL</label>
+   <input type="text" class="form-control" id="SiteUrl" placeholder="Website url">
+</div>
+
+<button type="submit" id="submit" class="btn btn-primary"> submit</button>
+</form>
+</div>
+</div>
+<div class="container mt-5" >
+    <div class ="card card-body bg-light">
+      <div id="bookmarkResult"></div>
+    </div>
+</div>
+<script src="main.js"> </script>
+</body>
+</html>
